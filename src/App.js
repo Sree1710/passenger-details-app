@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import AddPassenger from './Components/AddPassenger';
-import SearchPassenger from './Components/SearchPassenger';
+import ViewPassenger from './Components/ViewPassenger';
+
 
 function App() {
   return (
     <div>
-      <SearchPassenger/>
+     <ViewPassenger/>
     </div>
   );
 }
