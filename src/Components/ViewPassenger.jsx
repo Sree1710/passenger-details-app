@@ -22,6 +22,7 @@ const ViewPassenger = () => {
     useEffect(() => { getData() }, [])
     return (
         <div>
+            <Header/>
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -30,7 +31,7 @@ const ViewPassenger = () => {
                                 <h1>View Passenger</h1>
                             </div>
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                <table class="table">
+                                <table className="table">
                                     <thead>
                                         <tr>
                                             <th scope="col">ID</th>
@@ -38,8 +39,8 @@ const ViewPassenger = () => {
                                             <th scope="col">No. Of Trips</th>
                                         </tr>
                                     </thead>
-                                    {isLoading ? <div class="spinner-border" role="status">
-                                        <span class="visually-hidden">Loading...</span>
+                                    {isLoading ? <div className="spinner-border" role="status">
+                                        <span className="visually-hidden">Loading...</span>
                                     </div> : <tbody>
                                         {passData.data.map(
                                             (value, index) => {
